@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 16:02:42 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/01 17:50:22 by emurillo         ###   ########.fr       */
+/*   Created: 2024/10/03 11:37:08 by yourlogin         #+#    #+#             */
+/*   Updated: 2024/10/03 11:37:14 by yourintraname    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_isprint(int c)
 	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int	c;
 
@@ -33,4 +33,4 @@ int	main(void)
 	else
 		printf("The value %d is NOT printable", c);
 	return (1);
-}
+} */

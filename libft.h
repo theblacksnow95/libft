@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 17:00:34 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/03 11:34:31 by yourintraname    ###   ########.fr       */
+/*   Created: 2024/10/03 11:34:45 by yourlogin         #+#    #+#             */
+/*   Updated: 2024/10/03 11:36:41 by yourintraname    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *str)
-{
-	size_t	i;
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <unistd.h>
 
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+size_t	ft_strlcat(char *dst, char *src, size_t size);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
+size_t	ft_strlen(char *str);
 
-/* int main(int argc, char **argv)
-{
-	{
-		printf("Length of str => %i", ft_strlen(argv[1]));
-	}
-	return (0);
-} */
+#endif
