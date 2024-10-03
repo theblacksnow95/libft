@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
+/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/03 11:34:45 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/03 11:36:41 by yourintraname    ###   ########.fr       */
+/*   Created: 2024/10/03 17:07:04 by yourlogin         #+#    #+#             */
+/*   Updated: 2024/10/03 17:07:04 by yourlogin        ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ int		ft_isprint(int c);
 size_t	ft_strlcat(char *dst, char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(char *str);
+int		ft_strncmp(const char *str1, const char *str2, size_t n);
 
 #endif
