@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 18:32:23 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/03 18:32:32 by yourlogin        ###   ########.ch       */
+/*   Updated: 2024/10/03 18:35:09 by yourintraname    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
