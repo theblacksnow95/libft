@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/05 12:10:08 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/05 12:10:08 by yourlogin        ###   ########.ch       */
+/*   Created: 2024/10/07 16:59:46 by yourlogin         #+#    #+#             */
+/*   Updated: 2024/10/07 16:59:59 by yourintraname    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
