@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 12:59:39 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/09 12:59:39 by yourlogin        ###   ########.ch       */
+/*   Created: 2024/10/09 13:05:19 by yourlogin         #+#    #+#             */
+/*   Updated: 2024/10/09 13:05:39 by yourintraname    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_calloc(size_t nitems, size_t size)
 	{
 		return (NULL);
 	}
-	while (i < nitems*size)
+	while (i < nitems * size)
 		arr[i++] = 0;
 	return ((void *)arr);
 }
