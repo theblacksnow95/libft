@@ -3,42 +3,49 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 17:58:00 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/08 18:17:47 by emurillo         ###   ########.fr       */
+/*   Created: 2024/10/09 12:59:39 by yourlogin         #+#    #+#             */
+/*   Updated: 2024/10/09 12:59:39 by yourlogin        ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+** this function uses the samme principle than *bzero()*,
+** initializing a block of memory equal to (nitems*size) and
+** filling all the memory with zeros, allowing us to use it
+** and returning a cast void* to us.
+*/
+
 void	*ft_calloc(size_t nitems, size_t size)
 {
-	int	*arr;
+	unsigned char	*arr;
 	size_t			i;
 
 	i = 0;
-	arr = (int *)malloc (nitems * size);
+	arr = malloc(nitems * size);
 	if (arr == NULL)
 	{
 		return (NULL);
 	}
-	while (i++ < nitems)
-	{
-		arr[i] = 0;
-	}
-	return (arr);
+	while (i < nitems*size)
+		arr[i++] = 0;
+	return ((void *)arr);
 }
 
-int	main(void)
+/* int	main(void)
 {
-	int*	array;
-	int		i;
+	int	*array;
+	int	i;
+	int	n;
 
 	i = 0;
-	array = ft_calloc(100, sizeof(int));
-	while (i++ < 100)
+	n = 1000;
+	array = ft_calloc(n, sizeof(int));
+	while (i++ < n)
 	{
 		printf("%d", array[i]);
 		i++;
@@ -47,4 +54,4 @@ int	main(void)
 	printf("\n");
 	return (0);
 }
-
+ */
