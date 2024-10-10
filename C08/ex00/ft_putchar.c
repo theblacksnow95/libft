@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 11:43:04 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/03 11:44:19 by yourintraname    ###   ########.fr       */
+/*   Updated: 2024/10/10 10:17:08 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft.h"
 
 void	ft_putchar(char c)
 {
