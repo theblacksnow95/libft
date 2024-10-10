@@ -3,35 +3,35 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:59:31 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/07 16:59:34 by yourintraname    ###   ########.fr       */
+/*   Updated: 2024/10/10 13:26:55 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 
-char	*ft_strchr(char *str, int search_str)
+char	*ft_strchr(char *str, int search_chr)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] == search_str)
+		if (str[i] == search_chr)
 			return (&str[i]);
 		i++;
 	}
-	if (search_str == '\0')
+	if (search_chr == '\0')
 	{
 		return (&str[i]);
 	}
 	return (NULL);
 }
 
-/* char	*ft_strchr(char *str, int search_str)
+/* char	*ft_strchr(char *str, int search_chr)
 {
 	int		i;
 	int		j;
@@ -42,7 +42,7 @@ char	*ft_strchr(char *str, int search_str)
 	res = str;
 	while (str[i] != '\0')
 	{
-		if (str[i] == search_str)
+		if (str[i] == search_chr)
 		{
 			while (str[i] != '\0')
 			{
