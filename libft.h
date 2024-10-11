@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 12:59:24 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/10 17:33:51 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:44:37 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int		ft_tolower(int ch);
 int		ft_atoi(const char *str);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 int		ft_memcmp(const void *buf1, const void *buf2, size_t c);
+char	*ft_itoa(int n);
 char	*ft_strchr(char *str, int search_chr);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(char *big, char *little, size_t len);

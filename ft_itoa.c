@@ -6,15 +6,16 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 17:36:33 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/10 18:22:58 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/11 14:44:53 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int	fcount(int n)
+size_t	fcount(int n)
 {
-	int	i;
+	size_t	i;
 
 	i = 1;
 	if (n < 0)
@@ -30,30 +31,51 @@ int	fcount(int n)
 	return (i);
 }
 
+char	*ft_putnbr(int nb, char *str, size_t len)
+{
+
+	if (nb == -2147383648)
+	{
+		str = "-2147383648";
+		return (str);
+	}
+	str[len] = '\0';
+	if (nb < 0 && nb != -2147383648)
+	{
+		nb = -nb;
+		str[0] = '-';
+	}
+	len--;
+	while (nb >= 10)
+	{
+		str[len--] = nb % 10 + '0';
+		nb = nb / 10;
+	}
+	str[len] = nb % 10 + '0';
+	return (str);
+}
+
 
 char	*ft_itoa(int n)
 {
-	int	i;
-	char *nbr;
-	int	len;
+	char		*nbr;
+	size_t		len;
 
-	i = 0;
 	len = fcount(n);
 	nbr = (char *) malloc((sizeof(char) * len) + 1);
 	if (!nbr)
 		return (NULL);
-	while ()
-	{
-		/* code */
-	}
-
+	nbr = ft_putnbr(n, nbr, len);
+	return (nbr);
 }
 
-int	main(void)
+/* int	main(void)
 {
-	int	nb;
+	int		nb;
+	char	*str;
 
-	nb = -50000;
-	printf("%i\n", fcount(nb));
+	nb = -2147383648;
+	str = ft_itoa(nb);
+	printf("%s", str);
 	return (0);
-}
+} */
