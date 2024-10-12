@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 12:34:17 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/05 12:52:59 by yourintraname    ###   ########.fr       */
+/*   Updated: 2024/10/12 14:58:08 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,11 @@ int	ft_atoi(const char *str)
 	return (num);
 }
 
-int	main(int argc, char **argv)
+/* int	main(int argc, char **argv)
 {
 	int	num;
 
 	num = ft_atoi(argv[1]);
 	printf("%d\n", num);
 	return (0);
-}
+} */

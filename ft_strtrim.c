@@ -6,17 +6,17 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 10:38:39 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/10 17:31:37 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/12 15:07:53 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-
+#include <stdlib.h>
 
 char	*ft_strchr(char *str, int search_chr);
 size_t	ft_strlen(char *str);
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char *s1, char *set)
 {
 	size_t	i;
 	size_t	start;
@@ -45,8 +45,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 /* int	main(void)
 {
-	char	str[] = "bcaaabca12sabch2abcabc";
-	char	set[] = "abc";
+	char	str[] = "!?!?!?!?!!!!????!!??????casa!!???!?!?????!!!!";
+	char	set[] = "!?";
 	char	*res;
 
 	res = ft_strtrim(str, set);

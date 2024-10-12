@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:12:35 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/10 17:33:05 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/12 15:11:44 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strchr(char *str, int search_chr);
 size_t	ft_strlen(char *str);
 
-size_t	word_count(char const *str, char c)
+size_t	word_count(char *str, char c)
 {
 	size_t	count;
 	size_t	i;
@@ -35,7 +35,7 @@ size_t	word_count(char const *str, char c)
 	return (count);
 }
 
-void	fill_split(char **arr, char const *s, char c)
+void	fill_split(char **arr, char *s, char c)
 {
 	size_t	i;
 	size_t	wlen;
@@ -58,7 +58,7 @@ void	fill_split(char **arr, char const *s, char c)
 		arr[i] = NULL;
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(char *s, char c)
 {
 	size_t	i;
 	size_t	wlen;

@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 12:59:24 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/11 14:44:37 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/12 15:07:37 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strnstr(char *big, char *little, size_t len);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *string);
-char	**ft_split(char const *s, char c);
+char	**ft_split(char *s, char c);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
