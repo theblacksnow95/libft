@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:31:47 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 13:03:56 by yourintraname    ###   ########.fr       */
+/*   Updated: 2024/10/14 18:11:10 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-
 
 /*  int	main(void)
 {

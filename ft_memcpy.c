@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 10:45:48 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/12 15:18:49 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:45:08 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	s1 = (unsigned char *)dest;
 	s2 = (unsigned char *)src;
+	if (!dest && !src)
+		return (0);
 	while (i < n)
 	{
 		s1[i] = s2[i];
@@ -29,14 +31,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
 /* int	main(void)
 {
-	char	dest[100];
+	char	dest[10];
 
 	strcpy(dest, "Test1");
 	printf("Buffer in origin: %s\n", dest);
-	ft_memcpy(dest + 2, dest, 4);
+	ft_memcpy(((void *)0), ((void *)0), 3);
 	printf("Buffer after memcpy: %s\n", dest);
 	return (0);
-} */
+}
+ */

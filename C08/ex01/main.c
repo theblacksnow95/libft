@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 14:23:59 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/03 14:25:51 by yourintraname    ###   ########.fr       */
+/*   Updated: 2024/10/14 18:14:56 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_boolean.h"
 
-void	ft_putstr(char *str)
+/* void	ft_putstr(char *str)
 {
 	while (*str)
 		write(1, str++, 1);
@@ -31,4 +31,4 @@ int	main(int argc, char **argv)
 	else
 		ft_putstr(ODD_MSG);
 	return (SUCCESS);
-}
+} */

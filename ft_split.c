@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 21:03:09 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 11:19:22 by yourlogin        ###   ########.ch       */
+/*   Updated: 2024/10/14 18:13:06 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strchr(char *str, int search_chr);
-size_t	ft_strlen(char *str);
+size_t	ft_strlen(char const *str);
 
 size_t	word_count(char *str, char c)
 {
@@ -64,7 +64,7 @@ char	**ft_split(char *s, char c)
 	char	**arr;
 
 	wn = word_count(s, c);
-	arr = (char **)malloc((sizeof(char*) * wn) + 1);
+	arr = (char **)malloc((sizeof(char *) * wn) + 1);
 	if (!arr)
 		return (NULL);
 	fill_split(arr, s, c);

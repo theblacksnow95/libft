@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:50:57 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 12:26:46 by yourlogin        ###   ########.ch       */
+/*   Updated: 2024/10/14 18:10:22 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 17:36:33 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/11 14:44:53 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:38:32 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@ size_t	fcount(int n)
 	size_t	i;
 
 	i = 1;
+	if (n == -2147483648)
+	{
+		n = n + 1;
+	}
 	if (n < 0)
 	{
 		i++;
@@ -31,16 +35,31 @@ size_t	fcount(int n)
 	return (i);
 }
 
+char	*int_min(char *str)
+{
+	int		i;
+	char	*min;
+
+	i = 0;
+	min = "-2147483648";
+	while (min[i])
+	{
+		str[i] = min[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}
+
 char	*ft_putnbr(int nb, char *str, size_t len)
 {
-
-	if (nb == -2147383648)
+	if (nb == -2147483648)
 	{
-		str = "-2147383648";
+		int_min(str);
 		return (str);
 	}
 	str[len] = '\0';
-	if (nb < 0 && nb != -2147383648)
+	if (nb < 0 && nb != -2147483648)
 	{
 		nb = -nb;
 		str[0] = '-';
@@ -54,7 +73,6 @@ char	*ft_putnbr(int nb, char *str, size_t len)
 	str[len] = nb % 10 + '0';
 	return (str);
 }
-
 
 char	*ft_itoa(int n)
 {
@@ -74,7 +92,7 @@ char	*ft_itoa(int n)
 	int		nb;
 	char	*str;
 
-	nb = -2147383648;
+	nb = -2147483648;
 	str = ft_itoa(nb);
 	printf("%s", str);
 	return (0);

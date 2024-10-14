@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 11:52:30 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/08 15:40:34 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:44:03 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s1 = (unsigned char *)dest;
 	s2 = (unsigned char *)src;
 	i = 0;
+	if (!dest && !src)
+		return (0);
 	if (s2 < s1)
 	{
 		while (n--)

@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:59:31 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/10 13:26:55 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:29:27 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,12 @@ char	*ft_strchr(char *str, int search_chr)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	search_chr = search_chr & 0xFF;
+	while (*str != '\0' && search_chr != *str)
 	{
-		if (str[i] == search_chr)
-			return (&str[i]);
-		i++;
+		str++;
 	}
-	if (search_chr == '\0')
+	if (search_chr == *str)
 	{
 		return (&str[i]);
 	}

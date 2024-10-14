@@ -6,13 +6,14 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:16:02 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/09 15:49:50 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/14 15:27:12 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 
+size_t	ft_strlen(char const *str);
 /*
 **	La funcion strdup duplica el string
 **	creando uno nuevo mediante malloc
@@ -23,17 +24,7 @@
 **	sumamos uno extra para el fin de linea '\0'
  */
 
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-char	*ft_strdup(const char *string)
+char	*ft_strdup(char const *string)
 {
 	char	*cp;
 	int		i;

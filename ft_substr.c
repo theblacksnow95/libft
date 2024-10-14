@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:57:07 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/09 17:16:56 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:13:11 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,15 +22,7 @@
 **	returns null if overflow
 */
 
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
+size_t	ft_strlen(char const *str);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -42,10 +34,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str_len = ft_strlen(s);
 	if (start >= str_len)
 	{
-		sub = (char *)(malloc(1));
+		sub = (char *)malloc(sizeof(char));
 		if (sub)
 			sub[0] = '\0';
-		return (0);
+		return (sub);
 	}
 	if (len > str_len - start)
 		len = str_len - start;
@@ -66,11 +58,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	str[] = "the clostern white.";
 	char	*substr;
 
-	substr = ft_substr(str, 19, 8);
+	substr = ft_substr(str, 400, 20);
 
 	printf("Original str: '%s'\n", str);
 	printf("Substr => '%s'\n", substr);
 	free(substr);
 	return (0);
-}
- */
+} */

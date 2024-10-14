@@ -3,11 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+
-	+#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/14 11:27:38 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 11:48:23 by yourlogin        ###   ########.ch       */
+/*   Created: 2024/10/14 18:08:09 by emurillo          #+#    #+#             */
+/*   Updated: 2024/10/14 18:09:27 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +23,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	while (src[len] != '\0')
 		len++;
 	if (size == 0)
-		return(len);
+		return (len);
 	while ((i < size - 1) && src[i] != '\0')
 	{
 		dest[i] = src[i];
@@ -34,7 +33,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (len);
 }
 
-int	test(size_t size)
+/* int	test(size_t size)
 {
 	char	string[] = "lorem ipsum dolor sit amet";
 	char	buffer[20];
@@ -43,12 +42,10 @@ int	test(size_t size)
 	r = ft_strlcpy(buffer, string, size);
 	printf("copied '%s', length %zu\n", buffer, r);
 	return (0);
-}
+} */
 
 /* int	main(void)
 {
 	test(0);
 	return (0);
 } */
-
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:59:46 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/07 16:59:59 by yourintraname    ###   ########.fr       */
+/*   Updated: 2024/10/14 18:07:33 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strnstr(char *big, char *little, size_t len)
 {
 	size_t	i;
-	int		j;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -23,29 +23,28 @@ char	*ft_strnstr(char *big, char *little, size_t len)
 	{
 		return ((char *)&big[i]);
 	}
-	while (big[i] != '\0' && i <= len)
+	while (big[i] != '\0')
 	{
-		if (big[i] == little[j] && little[j] != '\0')
+		j = 0;
+		while (big[i + j] == little[j] && (i + j) < len)
 		{
+			if (little[j] == '\0' && big[i + j] == '\0')
+				return ((char *)&big[i]);
 			j++;
-			if (little[j] == '\0')
-				return ((char *)&big[i - j + 1]);
 		}
-		else
-		{
-			j = 0;
-		}
+		if (little[j] == '\0')
+			return ((char *)&big[i]);
 		i++;
 	}
 	return (NULL);
 }
-
-/* int	main(void)
+/*
+int	main(void)
 {
-	char	s1[] = "las flores rojas";
+	char	s1[] = "aaabcabcd";
 	char	*res;
-	char	s2[] = "flor";
+	char	s2[] = "abc";
 
-	res = ft_strstr(s1, s2, 7);
+	res = ft_strnstr(s1, s2, 5);
 	printf("'%s' found at '%s'\n", s2, res);
 } */
