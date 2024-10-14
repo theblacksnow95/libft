@@ -7,7 +7,7 @@
 	+#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:27:38 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 11:37:47 by yourlogin        ###   ########.ch       */
+/*   Updated: 2024/10/14 11:48:23 by yourlogin        ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	len = 0;
 	while (src[len] != '\0')
 		len++;
+	if (size == 0)
+		return(len);
 	while ((i < size - 1) && src[i] != '\0')
 	{
 		dest[i] = src[i];
@@ -43,10 +45,10 @@ int	test(size_t size)
 	return (0);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	test(0);
 	return (0);
-}
+} */
 
 
