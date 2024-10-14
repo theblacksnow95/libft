@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yourlogin <youremail@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/02 12:42:44 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/02 18:01:44 by emurillo         ###   ########.fr       */
+/*   Created: 2024/10/14 11:50:57 by yourlogin         #+#    #+#             */
+/*   Updated: 2024/10/14 12:26:46 by yourlogin        ###   ########.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,16 @@ size_t	ft_strlcat(char *dst, char *src, size_t size)
 
 	len = sizestr(dst);
 	i = 0;
-	if ((sizestr(src) + len) >= size)
+	if (size == 0)
+		return (size + sizestr(src));
+	while (i + len < (size - 1) && src[i] != '\0')
 	{
-		return (size);
-	}
-	while (i <= (size - 1) && src[i] != '\0')
-	{
-		dst[len] = src[i];
-		len++;
+		dst[len + i] = src[i];
 		i++;
 	}
-	dst[len] = '\0';
+	dst[len + i] = '\0';
+	if (len < size)
+		return (len + sizestr(src));
 	return (size + sizestr(src));
 }
 
