@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 12:59:24 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/16 14:21:02 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 17:15:07 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int			ft_isalnum(int c);
 int			ft_isalpha(int c);
