@@ -6,16 +6,16 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 21:03:09 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 18:13:06 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:05:39 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strchr(char *str, int search_chr);
-size_t	ft_strlen(char const *str);
+char		*ft_substr(char const *s, unsigned int start, size_t len);
+char		*ft_strchr(char *str, int search_chr);
+size_t		ft_strlen(char const *str);
 
 size_t	word_count(char *str, char c)
 {

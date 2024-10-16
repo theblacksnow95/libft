@@ -6,12 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:57:07 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/14 18:13:11 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:50:50 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 /*
 **	the function extracts a substring from the main string

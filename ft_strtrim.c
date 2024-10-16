@@ -6,17 +6,16 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 10:38:39 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/12 15:07:53 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:08:58 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-char	*ft_strchr(char *str, int search_chr);
-size_t	ft_strlen(char *str);
+char		*ft_strchr(char *str, int search_chr);
+size_t		ft_strlen(char const *str);
 
-char	*ft_strtrim(char *s1, char *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	start;
@@ -26,11 +25,11 @@ char	*ft_strtrim(char *s1, char *set)
 	i = 0;
 	start = 0;
 	len = ft_strlen(s1);
-	while (s1[start] && ft_strchr(set, s1[start]))
+	while (s1[start] && ft_strchr((char *)set, s1[start]))
 	{
 		start++;
 	}
-	while (len > start && ft_strchr(set, s1[len - 1]))
+	while (len > start && ft_strchr((char *)set, s1[len - 1]))
 	{
 		len--;
 	}

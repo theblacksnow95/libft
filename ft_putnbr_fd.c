@@ -1,38 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 14:41:16 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/16 11:50:59 by emurillo         ###   ########.fr       */
+/*   Created: 2024/10/16 11:20:57 by emurillo          #+#    #+#             */
+/*   Updated: 2024/10/16 11:53:39 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putchar_fd(char c, int fd);
 
-int	ft_tolower(int ch)
+void	ft_putnbr_fd(int n, int fd)
 {
-	if (ch >= 65 && ch <= 90)
+	char	num;
+
+	if (n == -2147483648)
 	{
-		ch = ch + 32;
-		return (ch);
+		ft_putstr_fd("-2147483648", fd);
+		return ;
 	}
-	return (ch);
+	if (n < 0 && n != -2147483648)
+	{
+		n = -n;
+		ft_putchar_fd('-', fd);
+	}
+	if (n >= 10)
+	{
+		ft_putnbr_fd((n / 10), fd);
+	}
+	num = n % 10 + '0';
+	ft_putchar_fd(num, fd);
 }
-
-/* int	main(void)
-{
-	int	ch;
-	int	a;
-	int	b;
-
-	ch = 'p';
-	a = 'S';
-	b = '9';
-	printf("%c => %c\n", ch, ft_tolower(ch));
-	printf("%c => %c\n", a, ft_tolower(a));
-	printf("%c => %c\n", b, ft_tolower(b));
-	return (0);
-} */

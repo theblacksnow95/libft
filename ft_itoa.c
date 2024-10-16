@@ -6,12 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 17:36:33 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/14 16:38:32 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:52:52 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 size_t	fcount(int n)
 {

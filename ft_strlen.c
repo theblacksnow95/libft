@@ -6,13 +6,13 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:00:34 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/10 11:18:02 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:54:39 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(char const *str)
 {
 	size_t	i;
 

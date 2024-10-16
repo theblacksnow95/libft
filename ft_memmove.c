@@ -6,11 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 11:52:30 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/14 16:44:03 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:53:25 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 /*
 ** Copy an array src to dest
 ** first copy src to a temporary variable s2, annd verify if we are having

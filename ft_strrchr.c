@@ -6,11 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:31:47 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 18:11:10 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:50:13 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {

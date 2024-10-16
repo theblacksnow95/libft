@@ -6,12 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 17:28:48 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/14 15:27:22 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:46:28 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 size_t	fstrlen(const char *str)
 {

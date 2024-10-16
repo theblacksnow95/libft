@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yourintraname <yourintraname@student.42Ber +#+  +:+       +#+        */
+/*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 13:05:19 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/09 13:05:39 by yourintraname    ###   ########.fr       */
+/*   Updated: 2024/10/16 11:51:45 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 /*
 ** this function uses the samme principle than *bzero()*,

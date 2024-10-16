@@ -6,12 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 11:50:57 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 18:10:22 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:49:03 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	sizestr(char *str)
 {

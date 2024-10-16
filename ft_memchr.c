@@ -6,11 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 15:44:20 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/08 16:21:37 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:53:00 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 /*
 ** To look for the value c, we first cast it to an unsigned char,

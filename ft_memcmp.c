@@ -6,11 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 16:21:22 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/08 18:03:56 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:53:09 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *buf1, const void *buf2, size_t c)
 {

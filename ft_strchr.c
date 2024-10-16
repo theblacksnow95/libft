@@ -6,12 +6,11 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:59:31 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/14 16:29:27 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:04:59 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <unistd.h>
+#include "libft.h"
 
 char	*ft_strchr(char *str, int search_chr)
 {
