@@ -6,11 +6,10 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 21:03:09 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/16 12:05:39 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:42:07 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 char		*ft_substr(char const *s, unsigned int start, size_t len);
@@ -46,7 +45,7 @@ void	fill_split(char **arr, char *s, char c)
 		if (*s != c)
 		{
 			if (ft_strchr(s, c))
-				wlen = ft_strchr(s, c) - s;
+				wlen = (size_t)(ft_strchr(s, c) - s);
 			else
 				wlen = ft_strlen(s);
 			arr[i++] = ft_substr(s, 0, wlen);
@@ -64,14 +63,14 @@ char	**ft_split(char *s, char c)
 	char	**arr;
 
 	wn = word_count(s, c);
-	arr = (char **)malloc((sizeof(char *) * wn) + 1);
+	arr = (char **)malloc(sizeof(char *) * (wn + 1));
 	if (!arr)
 		return (NULL);
 	fill_split(arr, s, c);
 	return (arr);
 }
 
-/*  int	main(void)
+/* int	main(void)
 {
 	char	str[] = "hello, -world, -this, -is, -a, -test";
 	int		i;
@@ -92,5 +91,4 @@ char	**ft_split(char *s, char c)
 	}
 	free(result);
 	return (0);
-}
- */
+} */
