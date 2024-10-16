@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 21:03:09 by yourlogin         #+#    #+#             */
-/*   Updated: 2024/10/16 12:42:07 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/16 15:33:56 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,21 @@ size_t	word_count(char *str, char c)
 	return (count);
 }
 
-void	fill_split(char **arr, char *s, char c)
+void	*ft_free(char **str, int n)
+{
+	int	i;
+
+	i = 0;
+	while (i < n)
+	{
+		free(str[i]);
+		i++;
+	}
+	free(str);
+	return (NULL);
+}
+
+char	**fill_split(char **arr, char *s, char c)
 {
 	size_t	i;
 	size_t	wlen;
@@ -48,13 +62,17 @@ void	fill_split(char **arr, char *s, char c)
 				wlen = (size_t)(ft_strchr(s, c) - s);
 			else
 				wlen = ft_strlen(s);
-			arr[i++] = ft_substr(s, 0, wlen);
+			arr[i] = ft_substr(s, 0, wlen);
+			if (arr[i] == NULL)
+				return (ft_free(arr, i));
+			i++;
 			s += wlen;
 		}
 		else
 			s++;
 	}
-		arr[i] = NULL;
+	arr[i] = NULL;
+	return (arr);
 }
 
 char	**ft_split(char *s, char c)
@@ -66,8 +84,7 @@ char	**ft_split(char *s, char c)
 	arr = (char **)malloc(sizeof(char *) * (wn + 1));
 	if (!arr)
 		return (NULL);
-	fill_split(arr, s, c);
-	return (arr);
+	return (fill_split(arr, s, c));
 }
 
 /* int	main(void)
