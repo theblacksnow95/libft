@@ -6,7 +6,7 @@
 #    By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/11 16:54:42 by emurillo          #+#    #+#              #
-#    Updated: 2024/10/16 14:21:13 by emurillo         ###   ########.fr        #
+#    Updated: 2024/10/17 16:27:35 by emurillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,22 +20,27 @@ SOURCES = ft_atoi.c ft_isascii.c ft_memcmp.c ft_strchr.c ft_strlen.c ft_substr.c
 		  ft_isalpha.c ft_memchr.c ft_split.c ft_strlcpy.c ft_strtrim.c ft_putchar_fd.c \
 		  ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_strmapi.c ft_striteri.c
 
+BONUSSOURCES = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
+			   ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c
+
 OBJECTS = $(SOURCES:.c=.o)
+
+BONUSOBJECTS = $(BONUSSOURCES:.c=.o)
 
 all: $(NAME)
 
-%.o:%.c
-	$(CC) $(CFLAGS) $< -o $@
-
 $(NAME): $(OBJECTS)
-	ar cr $@ $(OBJECTS)
+	ar crs $(NAME) $(OBJECTS)
 
 clean:
-	rm -f $(OBJECTS)
+	rm -f $(OBJECTS) $(BONUSOBJECTS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+bonus: all $(BONUSOBJECTS)
+	ar crs $(NAME) $(BONUSOBJECTS)
 
 .PHONY: all clean fclean re
