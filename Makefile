@@ -6,7 +6,7 @@
 #    By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/11 16:54:42 by emurillo          #+#    #+#              #
-#    Updated: 2024/10/17 17:37:30 by emurillo         ###   ########.fr        #
+#    Updated: 2024/10/18 12:23:02 by emurillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ SOURCES = ft_atoi.c ft_isascii.c ft_memcmp.c ft_strchr.c ft_strlen.c ft_substr.c
 		  ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_strmapi.c ft_striteri.c
 
 BONUSSOURCES = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
-			   ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c
+			   ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c \
+			   ft_lstmap_bonus.c
 
 OBJECTS = $(SOURCES:.c=.o)
 

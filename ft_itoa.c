@@ -6,13 +6,13 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 17:36:33 by emurillo          #+#    #+#             */
-/*   Updated: 2024/10/16 11:52:52 by emurillo         ###   ########.fr       */
+/*   Updated: 2024/10/18 13:28:47 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	fcount(int n)
+static size_t	fcount(int n)
 {
 	size_t	i;
 
@@ -34,7 +34,7 @@ size_t	fcount(int n)
 	return (i);
 }
 
-char	*int_min(char *str)
+static char	*int_min(char *str)
 {
 	int		i;
 	char	*min;
@@ -50,7 +50,7 @@ char	*int_min(char *str)
 	return (str);
 }
 
-char	*ft_putnbr(int nb, char *str, size_t len)
+static char	*ft_putnbr(int nb, char *str, size_t len)
 {
 	if (nb == -2147483648)
 	{
