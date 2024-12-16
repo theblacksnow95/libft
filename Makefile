@@ -6,7 +6,7 @@
 #    By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/11 16:54:42 by emurillo          #+#    #+#              #
-#    Updated: 2024/12/16 23:42:22 by emurillo         ###   ########.fr        #
+#    Updated: 2024/12/16 23:55:58 by emurillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,6 @@ LIBFT_SOURCES = ft_atoi.c ft_isascii.c ft_memcmp.c ft_strchr.c ft_strlen.c ft_su
 
 PRINTF_SOURCES = $(PRINTF_DIR)/ft_checkflags.c $(PRINTF_DIR)/ft_printf.c $(PRINTF_DIR)/ft_putchar_fd_int.c \
 				$(PRINTF_DIR)/ft_putnbr_pf.c $(PRINTF_DIR)/ft_putpointer.c $(PRINTF_DIR)/ft_putstr_fd_int.c \
-				$(PRINTF_DIR)/ft_strlen_pf.c
 
 GNL_SOURCES = $(GNL_DIR)/get_next_line_utils.c $(GNL_DIR)/get_next_line.c
 
