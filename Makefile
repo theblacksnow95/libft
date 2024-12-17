@@ -6,12 +6,12 @@
 #    By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/11 16:54:42 by emurillo          #+#    #+#              #
-#    Updated: 2024/12/17 09:50:30 by emurillo         ###   ########.fr        #
+#    Updated: 2024/12/17 14:10:19 by emurillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -c
+CFLAGS = -Wall -Werror -Wextra -c -I.
 NAME = libft.a
 PRINTF_DIR = printf
 GNL_DIR = get_next_line
