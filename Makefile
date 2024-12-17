@@ -6,7 +6,7 @@
 #    By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/11 16:54:42 by emurillo          #+#    #+#              #
-#    Updated: 2024/12/16 23:55:58 by emurillo         ###   ########.fr        #
+#    Updated: 2024/12/17 09:50:30 by emurillo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,21 +15,22 @@ CFLAGS = -Wall -Werror -Wextra -c
 NAME = libft.a
 PRINTF_DIR = printf
 GNL_DIR = get_next_line
-LIBFT_SOURCES = ft_atoi.c ft_isascii.c ft_memcmp.c ft_strchr.c ft_strlen.c ft_substr.c ft_bzero.c \
-		  ft_isdigit.c ft_memcpy.c ft_strdup.c ft_strncmp.c ft_tolower.c ft_calloc.c \
-		  ft_isprint.c ft_memmove.c ft_strjoin.c ft_strnstr.c ft_toupper.c\
-		  ft_isalnum.c ft_itoa.c ft_memset.c ft_strlcat.c ft_strrchr.c \
-		  ft_isalpha.c ft_memchr.c ft_split.c ft_strlcpy.c ft_strtrim.c ft_putchar_fd.c \
-		  ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_strmapi.c ft_striteri.c
+LIBFT_DIR = libft_functions/
+LIBFT_SOURCES = $(LIBFT_DIR)ft_atoi.c $(LIBFT_DIR)ft_isascii.c $(LIBFT_DIR)ft_memcmp.c $(LIBFT_DIR)ft_strchr.c $(LIBFT_DIR)ft_strlen.c $(LIBFT_DIR)ft_substr.c $(LIBFT_DIR)ft_bzero.c \
+		  $(LIBFT_DIR)ft_isdigit.c $(LIBFT_DIR)ft_memcpy.c $(LIBFT_DIR)ft_strdup.c $(LIBFT_DIR)ft_strncmp.c $(LIBFT_DIR)ft_tolower.c $(LIBFT_DIR)ft_calloc.c \
+		  $(LIBFT_DIR)ft_isprint.c $(LIBFT_DIR)ft_memmove.c $(LIBFT_DIR)ft_strjoin.c $(LIBFT_DIR)ft_strnstr.c $(LIBFT_DIR)ft_toupper.c\
+		  $(LIBFT_DIR)ft_isalnum.c $(LIBFT_DIR)ft_itoa.c $(LIBFT_DIR)ft_memset.c $(LIBFT_DIR)ft_strlcat.c $(LIBFT_DIR)ft_strrchr.c \
+		  $(LIBFT_DIR)ft_isalpha.c $(LIBFT_DIR)ft_memchr.c $(LIBFT_DIR)ft_split.c $(LIBFT_DIR)ft_strlcpy.c $(LIBFT_DIR)ft_strtrim.c $(LIBFT_DIR)ft_putchar_fd.c \
+		  $(LIBFT_DIR)ft_putstr_fd.c $(LIBFT_DIR)ft_putendl_fd.c $(LIBFT_DIR)ft_putnbr_fd.c $(LIBFT_DIR)ft_strmapi.c $(LIBFT_DIR)ft_striteri.c
 
 PRINTF_SOURCES = $(PRINTF_DIR)/ft_checkflags.c $(PRINTF_DIR)/ft_printf.c $(PRINTF_DIR)/ft_putchar_fd_int.c \
 				$(PRINTF_DIR)/ft_putnbr_pf.c $(PRINTF_DIR)/ft_putpointer.c $(PRINTF_DIR)/ft_putstr_fd_int.c \
 
 GNL_SOURCES = $(GNL_DIR)/get_next_line_utils.c $(GNL_DIR)/get_next_line.c
 
-BONUSSOURCES = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c \
-			   ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c \
-			   ft_lstmap_bonus.c
+BONUSSOURCES = $(LIBFT_DIR)ft_lstnew_bonus.c $(LIBFT_DIR)ft_lstadd_front_bonus.c $(LIBFT_DIR)ft_lstsize_bonus.c $(LIBFT_DIR)ft_lstlast_bonus.c \
+			   $(LIBFT_DIR)ft_lstadd_back_bonus.c $(LIBFT_DIR)ft_lstdelone_bonus.c $(LIBFT_DIR)ft_lstclear_bonus.c $(LIBFT_DIR)ft_lstiter_bonus.c \
+			   $(LIBFT_DIR)ft_lstmap_bonus.c
 
 SOURCES = $(LIBFT_SOURCES) $(PRINTF_SOURCES) $(GNL_SOURCES)
 
