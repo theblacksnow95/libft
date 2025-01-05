@@ -6,13 +6,13 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:21:49 by emurillo          #+#    #+#             */
-/*   Updated: 2024/11/13 13:24:48 by emurillo         ###   ########.fr       */
+/*   Updated: 2025/01/05 16:51:06 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-size_t	ft_strlen(char const *str)
+size_t	ft_strlen_gnl(char const *str)
 {
 	size_t	i;
 
@@ -22,7 +22,7 @@ size_t	ft_strlen(char const *str)
 	return (i);
 }
 
-char	*ft_strchr(char *str, int search_chr)
+char	*ft_strchr_gnl(char *str, int search_chr)
 {
 	int	i;
 
@@ -39,7 +39,7 @@ char	*ft_strchr(char *str, int search_chr)
 	return (NULL);
 }
 
-char	*ft_strjoin(char *s1, char *s2)
+char	*ft_strjoin_gnl(char *s1, char *s2)
 {
 	size_t	i;
 	char	*join;
@@ -52,7 +52,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		s2 = "";
 	i = 0;
 	j = 0;
-	t_len = (ft_strlen(s1) + ft_strlen(s2));
+	t_len = (ft_strlen_gnl(s1) + ft_strlen_gnl(s2));
 	join = (char *)malloc((t_len + 1) * sizeof(char));
 	if (join == NULL)
 		return (NULL);
@@ -66,14 +66,14 @@ char	*ft_strjoin(char *s1, char *s2)
 	return (join);
 }
 
-char	*ft_substr(char *s, unsigned int start, size_t len)
+char	*ft_substr_gnl(char *s, unsigned int start, size_t len)
 {
 	char	*sub;
 	size_t	i;
 	size_t	str_len;
 
 	i = 0;
-	str_len = ft_strlen(s);
+	str_len = ft_strlen_gnl(s);
 	if (start >= str_len)
 	{
 		sub = (char *)malloc(sizeof(char));
@@ -95,13 +95,13 @@ char	*ft_substr(char *s, unsigned int start, size_t len)
 	return (sub);
 }
 
-char	*ft_strdup(char const *string)
+char	*ft_strdup_gnl(char const *string)
 {
 	char	*cp;
 	int		i;
 
 	i = 0;
-	cp = (char *)malloc(ft_strlen(string) * sizeof(char) + 1);
+	cp = (char *)malloc(ft_strlen_gnl(string) * sizeof(char) + 1);
 	if (cp == NULL)
 		return (NULL);
 	while (string[i])

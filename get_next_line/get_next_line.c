@@ -6,7 +6,7 @@
 /*   By: emurillo <emurillo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 15:20:57 by emurillo          #+#    #+#             */
-/*   Updated: 2024/11/13 13:24:55 by emurillo         ###   ########.fr       */
+/*   Updated: 2025/01/05 16:50:00 by emurillo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static char	*left_line(char *buffer)
 		i++;
 	if (buffer[i] == '\0' || buffer[i] == '\0')
 		return (NULL);
-	line = ft_substr(buffer, i + 1, ft_strlen(buffer) - i);
+	line = ft_substr_gnl(buffer, i + 1, ft_strlen_gnl(buffer) - i);
 	if (*line == 0)
 	{
 		free(line);
@@ -64,10 +64,10 @@ static char	*fill_line(int fd, char *buffer, char *new_line)
 			break ;
 		buffer[read_bytes] = '\0';
 		if (!new_line)
-			new_line = ft_strdup("");
+			new_line = ft_strdup_gnl("");
 		temp = new_line;
-		new_line = ft_strjoin(temp, buffer);
-		if (ft_strchr(buffer, '\n'))
+		new_line = ft_strjoin_gnl(temp, buffer);
+		if (ft_strchr_gnl(buffer, '\n'))
 			break ;
 	}
 	return (new_line);
